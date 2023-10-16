@@ -32,3 +32,31 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	- 1000px
 */
 
+@media screen and (min-width: 640px) {
+	.obsah {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu {
+		flex: 0 0 30%;
+	}
+	.clanek {
+		flex: 0 0 70%;
+	}
+	.reklama {
+		flex: 0 0 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.obsah {
+		flex-wrap: nowrap;
+	}
+	.menu,
+	.reklama {
+		flex: 0 0 20%;
+	}
+	.clanek {
+		flex: 0 0 60%;
+	}
+}

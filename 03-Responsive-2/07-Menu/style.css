@@ -37,7 +37,55 @@ a {
 	padding: 10px 20px;
 }
 
+.menu li {
+	margin-bottom: 2px;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 a:hover {
 	background-color: #e74c3c;
 	color: white;
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 640px) {
+	.menu ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	.menu li {
+		flex: 0 0 calc((100% / 4) - 6px);
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+
+@media screen and (min-width: 1000px) {
+	.hlavicka {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.logo {
+		margin: 0;
+	}
+	
+	.menu ul {
+		margin-right: 10px;
+	}
+	.menu li {
+		margin-right: 2px;
+	}
 }
